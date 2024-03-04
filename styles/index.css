@@ -1269,6 +1269,55 @@
   grid-row: 27/33;
 }
 
+.awards-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1110px;
+  width: 100%;
+  min-height: 823px;
+  margin-top: 85px;
+  margin-bottom: 10px;
+}
+
+.awards-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.awards-section__line {
+  border-top: 1px solid black;
+  width: 100%;
+}
+
+.service-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1080px;
+  width: 100%;
+  min-height: 106px;
+  margin-top: 85px;
+  margin-bottom: 100px;
+}
+
+.service-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 65% 1fr 1fr;
+  grid-template-columns: 65% 1fr 1fr;
+}
+.service-box ul {
+  list-style-type: none;
+}
+.service-box li {
+  margin-bottom: 15px;
+}
+
 body {
   font-family: "Mulish", sans-serif;
   margin: auto;
