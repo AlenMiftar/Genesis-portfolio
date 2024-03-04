@@ -1270,28 +1270,32 @@
 }
 
 .awards-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 1110px;
-  width: 100%;
-  min-height: 823px;
-  margin-top: 85px;
-  margin-bottom: 10px;
+  margin: 100px 0;
 }
 
-.awards-box {
+.awards-section__textbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 12rem;
+  margin-bottom: 4rem;
+}
+.awards-section__textbox h2 {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.awards-section__package {
+  width: 120px;
 }
 
 .awards-section__line {
-  border-top: 1px solid black;
-  width: 100%;
+  border-top: 1.5px solid #979797;
+  margin-bottom: 50px;
 }
 
 .service-section {
