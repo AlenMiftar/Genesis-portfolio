@@ -74,7 +74,17 @@ main {
   color: #111111;
 }
 
-.grid__conteiner {
-  grid-template-rows: 32;
-  grid-template-columns: 9;
+.grid__container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(32, 1fr);
+  grid-gap: 1em;
+  max-width: 1110px;
+  width: 100%;
+  min-height: 1960px;
+}
+
+.first {
+  grid-column: 1 / 4;
+  grid-row: 1 / 8;
 }
