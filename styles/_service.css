@@ -1,6 +1,0 @@
-.service-text {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 65% 1fr 1fr;
-  grid-template-columns: 65% 1fr 1fr;
-}
