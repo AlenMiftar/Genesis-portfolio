@@ -1,8 +1,8 @@
 @use "index.scss";
 
-section {
-  display: grid;
-  grid-template-columns: (60%, 40%);
+.projects-section__one {
+  display: flex;
+  margin-top: 100px;
 }
 
 .projects-title__box {
@@ -24,15 +24,55 @@ section {
   }
 }
 
-.box {
+.info-box {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  width: 30%;
+  width: 50%;
+  height: 95%;
+  margin-top: 45px;
+
+  & h2 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  & p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 50px;
+  }
 
   & .line {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #979797;
+    margin-right: 40px;
   }
+}
+
+.img-div {
+  max-width: 1110px;
+  width: 100%;
+  height: 660px;
+  margin-top: 61px;
+}
+
+.text-div {
+  max-width: 1109px;
+  width: 100%;
+  min-height: 93px;
+  margin-top: 45px;
+
+  & p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1fr, 1fr, 1fr);
+  margin-top: 45px;
 }
