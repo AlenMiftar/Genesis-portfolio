@@ -10,11 +10,29 @@
 
   & h2 {
     flex: auto;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  & h3 {
+    font-size: 18px;
+    font-weight: 700;
   }
 }
 
 .awards-section__package {
   width: 120px;
+
+  & h4 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  & p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
 }
 
 .awards-section__line {
