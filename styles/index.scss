@@ -35,8 +35,9 @@ nav {
     text-decoration-line: none;
   }
 
-  &:hover {
+  & a:hover {
     cursor: pointer;
+    color: aqua;
   }
 }
 

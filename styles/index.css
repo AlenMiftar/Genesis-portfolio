@@ -1382,8 +1382,9 @@ nav a {
   color: black;
   text-decoration-line: none;
 }
-nav:hover {
+nav a:hover {
   cursor: pointer;
+  color: aqua;
 }
 
 .pages-links {
