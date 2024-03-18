@@ -30,6 +30,14 @@ input {
   margin-bottom: 10px;
   border: none;
   border-bottom: 1px solid #979797;
+
+  &:hover {
+    background-color: #979797;
+  }
+
+  &:focus {
+    background-color: #4a4ff2;
+  }
 }
 
 .btn {

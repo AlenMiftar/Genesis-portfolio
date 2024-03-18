@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/contact.css" />
+    <script
+      src="https://kit.fontawesome.com/cc39024647.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Contact</title>
   </head>
   <body>
@@ -33,15 +37,15 @@
         </div>
         <form class="form-container">
           <div class="form-name">
-            Name
-            <input type="text" />
+            <label for="name">Name</label>
+            <input type="text" id="name" />
           </div>
           <div class="form-email">
-            Email
-            <input type="email" />
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
             <div class="form-message">
-              Message
-              <input type="text" />
+              <label for="message">Message</label>
+              <input type="text" id="message" />
             </div>
             <button variant="form" type="submit" class="btn">Submit</button>
           </div>

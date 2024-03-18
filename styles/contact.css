@@ -1498,6 +1498,12 @@ input {
   border: none;
   border-bottom: 1px solid #979797;
 }
+input:hover {
+  background-color: #979797;
+}
+input:focus {
+  background-color: #4a4ff2;
+}
 
 .btn {
   width: 125px;
