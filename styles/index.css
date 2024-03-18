@@ -1375,7 +1375,6 @@ nav ul {
   display: -ms-flexbox;
   display: flex;
   gap: 25px;
-  margin-right: 50px;
   list-style-type: none;
 }
 nav a {
@@ -1392,10 +1391,6 @@ nav a:hover {
   font-weight: 700;
   line-height: auto;
   letter-spacing: -0.35px;
-}
-
-.svg-logo {
-  padding-left: 50px;
 }
 
 .intro-section {

@@ -1375,15 +1375,15 @@ nav ul {
   display: -ms-flexbox;
   display: flex;
   gap: 25px;
-  margin-right: 50px;
   list-style-type: none;
 }
 nav a {
   color: black;
   text-decoration-line: none;
 }
-nav:hover {
+nav a:hover {
   cursor: pointer;
+  color: aqua;
 }
 
 .pages-links {
@@ -1391,10 +1391,6 @@ nav:hover {
   font-weight: 700;
   line-height: auto;
   letter-spacing: -0.35px;
-}
-
-.svg-logo {
-  padding-left: 50px;
 }
 
 .intro-section {
@@ -1553,8 +1549,24 @@ nav:hover {
 .grid-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr1fr)[1fr];
-  grid-template-columns: repeat(1fr, 1fr, 1fr);
+  -ms-grid-columns: 1fr 5px 1fr 5px 1fr;
+  grid-template-columns: repeat(3, 1fr);
   margin-top: 45px;
   margin-bottom: 100px;
+  gap: 5px;
+}
+
+.first {
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+}
+
+.second {
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+}
+
+.third {
+  -ms-grid-column: 3;
+  grid-column: 3/3;
 }

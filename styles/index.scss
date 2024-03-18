@@ -1,6 +1,6 @@
-@use "grid";
-@use "awards";
-@use "service";
+@import "grid";
+@import "awards";
+@import "service";
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 $main-font: "Mulish", sans-serif;
 $blue-color: #4a4ff2;
@@ -26,7 +26,6 @@ nav {
   & ul {
     display: flex;
     gap: 25px;
-    margin-right: 50px;
     list-style-type: none;
   }
 
@@ -46,10 +45,6 @@ nav {
   font-weight: 700;
   line-height: auto;
   letter-spacing: -0.35px;
-}
-
-.svg-logo {
-  padding-left: 50px;
 }
 
 .intro-section {

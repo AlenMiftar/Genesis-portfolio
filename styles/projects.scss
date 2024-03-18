@@ -1,4 +1,4 @@
-@use "index.scss";
+@import "index";
 
 .projects-section__one {
   display: flex;
@@ -76,4 +76,17 @@
   grid-template-columns: repeat(3, 1fr);
   margin-top: 45px;
   margin-bottom: 100px;
+  gap: 5px;
+}
+
+.first {
+  grid-column: 1 / 1;
+}
+
+.second {
+  grid-column: 2 / 2;
+}
+
+.third {
+  grid-column: 3 / 3;
 }
