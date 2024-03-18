@@ -1463,11 +1463,28 @@ nav a:hover {
   height: 26px;
 }
 
+.projects-section__one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.projects-section__one .projects-text__box {
+  max-width: 260px;
+  width: 100%;
+}
+.projects-section__one h1 {
+  margin-top: 100px;
+  margin-bottom: 22px;
+}
+
 form {
   max-width: 475px;
   width: 100%;
   min-height: 291px;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 input {
@@ -1489,4 +1506,12 @@ input {
   background-color: #4a4ff2;
   color: white;
   margin-top: 40px;
+  margin-bottom: 100px;
+}
+.btn.btn:hover {
+  cursor: pointer;
+  background-color: black;
+}
+.btn.btn:focus {
+  background-color: rgb(255, 0, 0);
 }
