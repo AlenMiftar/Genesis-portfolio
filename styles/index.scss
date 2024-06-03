@@ -5,24 +5,41 @@
 $main-font: "Mulish", sans-serif;
 $blue-color: #4a4ff2;
 
+html {
+  overflow-x: hidden;
+}
+
 body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
   font-family: $main-font;
   margin: auto;
   max-width: 1110px;
   width: 100%;
   min-height: 100vh;
+  overflow-x: hidden;
+}
+
+main {
+  max-width: 1110px;
+  width: 100%;
+  overflow-x: hidden;
+  flex-wrap: wrap;
 }
 
 header,
 footer {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-top: 50px;
 }
 
 nav {
-  display: flex;
-
   & ul {
     display: flex;
     gap: 25px;
@@ -49,14 +66,17 @@ nav {
 
 .intro-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  width: 94%;
+  width: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
 .title-box {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
   max-width: 635px;
   width: 100%;
@@ -101,5 +121,13 @@ nav {
     font-size: 18px;
     width: 212px;
     height: 26px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    margin: auto;
+    width: 90%;
+    // flex-wrap: wrap;
   }
 }

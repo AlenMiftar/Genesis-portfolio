@@ -1,4 +1,6 @@
 .grid__section {
+  max-width: 1110px;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
