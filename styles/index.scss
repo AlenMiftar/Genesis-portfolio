@@ -20,13 +20,14 @@ body {
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
+  // flex-wrap: wrap;
 }
 
 main {
   max-width: 1110px;
   width: 100%;
   overflow-x: hidden;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 }
 
 header,
@@ -104,23 +105,31 @@ nav {
 .line-box {
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  width: 185px;
-  margin-bottom: 30px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  max-width: 207px;
+  width: 100%;
+  padding: 5px;
 
   & .design-line {
     display: flex;
+    justify-self: flex-start;
+    align-self: flex-start;
     border-top: 1.6px solid #979797;
     width: 30px;
     height: 3px;
-    margin-left: 12px;
+    margin-left: 10px;
   }
 
   & .design-p {
+    display: flex;
+    justify-self: end;
+    align-self: flex-end;
     font-style: italic;
     font-size: 18px;
     width: 212px;
     height: 26px;
+    text-align: center;
   }
 }
 
@@ -128,6 +137,6 @@ nav {
   body {
     margin: auto;
     width: 90%;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
