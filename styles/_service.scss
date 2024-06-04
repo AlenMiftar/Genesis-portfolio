@@ -1,21 +1,21 @@
 .service-section {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   max-width: 1080px;
   width: 100%;
-  // min-height: 106px;
+  min-height: 106px;
   margin: auto;
   margin-top: 85px;
   margin-bottom: 100px;
 }
 
 .service-box {
-  margin: auto;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  max-width: 1079px;
   width: 100%;
   display: grid;
   flex-wrap: wrap;
@@ -28,7 +28,6 @@
   }
 
   & ul {
-    margin: auto;
     margin-right: 35px;
     display: flex;
     flex-direction: column;
@@ -38,8 +37,6 @@
   }
 
   & li {
-    margin: auto;
-
     margin-bottom: 15px;
     font-size: 18px;
     font-weight: 400;
