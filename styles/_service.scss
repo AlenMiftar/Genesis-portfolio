@@ -6,16 +6,11 @@
   max-width: 1080px;
   width: 100%;
   min-height: 106px;
-  margin: auto;
   margin-top: 85px;
-  margin-bottom: 100px;
 }
 
 .service-box {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1079px;
   width: 100%;
   display: grid;
   flex-wrap: wrap;
@@ -28,14 +23,18 @@
   }
 
   & ul {
+    margin: 0px;
+    padding: 0px;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
     list-style-type: none;
   }
 
   & li {
+    margin: 0px;
+    padding: 0px;
+
     margin-bottom: 15px;
     font-size: 18px;
     font-weight: 400;
@@ -46,8 +45,5 @@
   .service-section .service-box {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
   }
 }

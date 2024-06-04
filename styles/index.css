@@ -87,22 +87,13 @@
   max-width: 1080px;
   width: 100%;
   min-height: 106px;
-  margin: auto;
   margin-top: 85px;
-  margin-bottom: 100px;
 }
 
 .service-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 1079px;
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -117,6 +108,9 @@
   line-height: 38px;
 }
 .service-box ul {
+  margin: 0px;
+  padding: 0px;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,15 +118,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
   list-style-type: none;
 }
 .service-box li {
+  margin: 0px;
+  padding: 0px;
   margin-bottom: 15px;
   font-size: 18px;
   font-weight: 400;
@@ -144,14 +134,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 html {
