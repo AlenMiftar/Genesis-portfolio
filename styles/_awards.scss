@@ -1,29 +1,37 @@
 .awards-section {
-  margin: 100px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  margin-top: 100px;
+  max-width: 1110px;
+  width: 100%;
+  border-top: 1px solid #d8d8d8;
 }
 
-.awards-section__textbox {
-  display: flex;
-  align-items: start;
-  gap: 12rem;
-  margin-bottom: 4rem;
+.awards-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  box-sizing: border-box;
+  grid-gap: 100px;
+  padding: 50px 5px;
+  border-bottom: 1px solid #d8d8d8;
 
-  & h2 {
-    flex: auto;
+  & h3 {
     font-size: 22px;
     font-weight: 700;
   }
 
-  & h3 {
+  & h4 {
     font-size: 18px;
     font-weight: 700;
   }
-}
 
-.awards-section__package {
-  width: 120px;
-
-  & h4 {
+  & h5 {
     font-size: 16px;
     font-weight: 400;
   }
@@ -35,7 +43,37 @@
   }
 }
 
-.awards-section__line {
-  border-top: 1.5px solid #979797;
-  margin-bottom: 50px;
+.awards {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+
+.site {
+  grid-column: 2/2;
+  grid-row: 1/1;
+}
+
+.ui {
+  grid-column: 3/3;
+  grid-row: 1/1;
+}
+
+.date {
+  grid-column: 4/4;
+  grid-row: 1/1;
+}
+
+.best {
+  grid-column: 2/2;
+  grid-row: 2/2;
+}
+
+.template {
+  grid-column: 3/3;
+  grid-row: 2/2;
+}
+
+.date-two {
+  grid-column: 4/4;
+  grid-row: 2/2;
 }

@@ -1,16 +1,16 @@
 .service-section {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 1080px;
+  max-width: 1110px;
   width: 100%;
   min-height: 106px;
   margin-top: 85px;
 }
 
 .service-box {
-  display: flex;
+  max-width: 1079px;
   width: 100%;
   display: grid;
   flex-wrap: wrap;

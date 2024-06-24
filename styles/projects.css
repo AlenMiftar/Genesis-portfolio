@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
-.grid__section {
+.gallery__section {
   max-width: 1110px;
   width: 100%;
   display: -ms-grid;
@@ -10,7 +10,7 @@
   margin: auto;
 }
 
-.grid__container {
+.gallery__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,7 +21,7 @@
   gap: 1em;
 }
 
-.grid__container img {
+.gallery__container img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -29,71 +29,159 @@
 }
 
 .awards-section {
-  margin: 100px 0;
-}
-
-.awards-section__textbox {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: start;
-  gap: 12rem;
-  margin-bottom: 4rem;
+          align-items: flex-start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 100px;
+  max-width: 1110px;
+  width: 100%;
+  border-top: 1px solid #d8d8d8;
 }
-.awards-section__textbox h2 {
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
+
+.awards-container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 100px 1fr 100px 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
+  -ms-grid-rows: 1fr 100px 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  grid-gap: 100px;
+  padding: 50px 5px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.awards-container > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.awards-container > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.awards-container > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.awards-container > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.awards-container > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.awards-container > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+.awards-container h3 {
   font-size: 22px;
   font-weight: 700;
 }
-.awards-section__textbox h3 {
+.awards-container h4 {
   font-size: 18px;
   font-weight: 700;
 }
-
-.awards-section__package {
-  width: 120px;
-}
-.awards-section__package h4 {
+.awards-container h5 {
   font-size: 16px;
   font-weight: 400;
 }
-.awards-section__package p {
+.awards-container p {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
 }
 
-.awards-section__line {
-  border-top: 1.5px solid #979797;
-  margin-bottom: 50px;
+.awards {
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+}
+
+.site {
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+}
+
+.ui {
+  -ms-grid-column: 3;
+  grid-column: 3/3;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+}
+
+.date {
+  -ms-grid-column: 4;
+  grid-column: 4/4;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+}
+
+.best {
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+  -ms-grid-row: 2;
+  grid-row: 2/2;
+}
+
+.template {
+  -ms-grid-column: 3;
+  grid-column: 3/3;
+  -ms-grid-row: 2;
+  grid-row: 2/2;
+}
+
+.date-two {
+  -ms-grid-column: 4;
+  grid-column: 4/4;
+  -ms-grid-row: 2;
+  grid-row: 2/2;
 }
 
 .service-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 1080px;
+  max-width: 1110px;
   width: 100%;
   min-height: 106px;
   margin-top: 85px;
 }
 
 .service-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  max-width: 1079px;
   width: 100%;
   display: -ms-grid;
   display: grid;
