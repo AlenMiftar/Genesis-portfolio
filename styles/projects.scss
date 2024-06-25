@@ -1,15 +1,18 @@
 @import "index";
 
 .projects-section__one {
+  max-width: 1110px;
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   margin-top: 100px;
 }
 
-.projects-title__box {
+.projects-info__box {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
+  justify-content: space-between;
 
   & h1 {
     font-size: 40px;
@@ -24,42 +27,40 @@
   }
 }
 
-.info-box {
-  display: flex;
-  justify-content: space-between;
+.projects-list-box {
+  max-width: 335px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
   flex-direction: column;
-  width: 50%;
-  height: 95%;
   margin-top: 45px;
 
   & h2 {
+    color: #11111183;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 700;
   }
 
   & p {
     font-size: 18px;
-    font-weight: 400;
-    margin-right: 50px;
-  }
-
-  & .line {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #979797;
-    margin-right: 40px;
+    font-weight: 700;
   }
 }
 
+.list-title,
+.list-item {
+  border-bottom: 1px solid #d8d8d8;
+  width: 100%;
+}
+
 .img-div {
-  max-width: 1110px;
   width: 100%;
   height: 660px;
   margin-top: 61px;
 }
 
 .text-div {
-  max-width: 1109px;
   width: 100%;
   min-height: 93px;
   margin-top: 45px;
@@ -72,11 +73,12 @@
 }
 
 .grid-container {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 45px;
   margin-bottom: 100px;
-  gap: 5px;
+  gap: 30px;
 }
 
 .first {
