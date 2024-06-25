@@ -408,31 +408,57 @@ nav a:hover {
         flex-wrap: wrap;
   }
 }
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .projects-section__one {
+  max-width: 1110px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 .projects-section__one .projects-text__box {
-  max-width: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 455px;
   width: 100%;
+  margin-top: 100px;
 }
 .projects-section__one h1 {
-  margin-top: 100px;
-  margin-bottom: 22px;
+  font-size: 40px;
 }
-
-form {
+.projects-section__one .form {
   max-width: 475px;
   width: 100%;
   min-height: 291px;
   margin-top: 100px;
 }
-
-input {
+.projects-section__one input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,16 +467,12 @@ input {
   min-height: 37px;
   margin-bottom: 10px;
   border: none;
-  border-bottom: 1px solid #979797;
+  border-bottom: 1px solid #d8d8d8;
 }
-input:hover {
-  background-color: #979797;
+.projects-section__one input:hover {
+  background-color: #d8d8d8;
 }
-input:focus {
-  background-color: #4a4ff2;
-}
-
-.btn {
+.projects-section__one .btn {
   width: 125px;
   height: 50px;
   border-radius: 2px;
@@ -459,10 +481,15 @@ input:focus {
   margin-top: 40px;
   margin-bottom: 100px;
 }
-.btn.btn:hover {
+.projects-section__one .btn.btn:hover {
   cursor: pointer;
-  background-color: black;
+  background-color: rgb(40, 146, 30);
 }
-.btn.btn:focus {
-  background-color: rgb(255, 0, 0);
+.projects-section__one .btn.btn:focus {
+  background-color: rgb(48, 120, 255);
+}
+
+.img-div {
+  width: 100%;
+  margin-bottom: 100px;
 }

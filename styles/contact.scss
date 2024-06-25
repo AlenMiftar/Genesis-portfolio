@@ -1,60 +1,73 @@
 @import "index";
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .projects-section__one {
+  max-width: 1110px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 
   & .projects-text__box {
-    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    max-width: 455px;
     width: 100%;
+    margin-top: 100px;
   }
 
   & h1 {
+    font-size: 40px;
+  }
+
+  .form {
+    max-width: 475px;
+    width: 100%;
+    min-height: 291px;
     margin-top: 100px;
-    margin-bottom: 22px;
-  }
-}
-
-form {
-  max-width: 475px;
-  width: 100%;
-  min-height: 291px;
-  margin-top: 100px;
-}
-
-input {
-  display: flex;
-  max-width: 400px;
-  width: 100%;
-  min-height: 37px;
-  margin-bottom: 10px;
-  border: none;
-  border-bottom: 1px solid #979797;
-
-  &:hover {
-    background-color: #979797;
   }
 
-  &:focus {
+  input {
+    display: flex;
+    max-width: 400px;
+    width: 100%;
+    min-height: 37px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #d8d8d8;
+
+    &:hover {
+      background-color: #d8d8d8;
+    }
+  }
+
+  .btn {
+    width: 125px;
+    height: 50px;
+    border-radius: 2px;
     background-color: #4a4ff2;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 100px;
+
+    &.btn:hover {
+      cursor: pointer;
+      background-color: rgb(40, 146, 30);
+    }
+
+    &.btn:focus {
+      background-color: rgb(48, 120, 255);
+    }
   }
 }
 
-.btn {
-  width: 125px;
-  height: 50px;
-  border-radius: 2px;
-  background-color: #4a4ff2;
-  color: white;
-  margin-top: 40px;
+.img-div {
+  width: 100%;
   margin-bottom: 100px;
-
-  &.btn:hover {
-    cursor: pointer;
-    background-color: black;
-  }
-
-  &.btn:focus {
-    background-color: rgb(255, 0, 0);
-  }
 }
